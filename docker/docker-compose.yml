@@ -10,11 +10,11 @@ services:
       - type: bind
         source: ../
         target: /home/workspace
-    command: sh -c "yarn start"
+    command: sh -c "yarn develop"
     networks:
       - docknet
     ports:
-      - "3000:3000"
+      - "8800:8000"
 
 
 networks:
